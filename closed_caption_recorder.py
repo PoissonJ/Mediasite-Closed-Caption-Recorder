@@ -68,8 +68,6 @@ for url in list_of_urls:
         except StaleElementReferenceException:
             continue
 
-    # Write output
-    # print ' '.join(closed_captions)
     with open("closed_captions.txt", "a") as text_file:
         text_file.write("\n\n" + page_title)
         text_file.write(' '.join(closed_captions))
