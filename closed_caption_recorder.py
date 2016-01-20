@@ -45,10 +45,13 @@ for url in list_of_urls:
 
     already_saved_subtitle_text = ""
     closed_captions = []
+    time_checked = False
 
     while video_playing:
+
         current_video_time = browser.find_element_by_class_name("position").text
-        if current_video_time == video_duration:
+        time_checked = True
+        if current_video_time == video_duration or (current_video_time == "0:00" and time_checked):
             break
 
         try:
