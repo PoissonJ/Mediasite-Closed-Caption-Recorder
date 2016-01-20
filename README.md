@@ -28,4 +28,3 @@ finishes (current video time = duration of video), the text is appended to the c
 
 ### Known bugs
   - Does not record last line of closed captions in the situaiton that there are multiple caption "boxes" still showing
-  - Sometimes misses the end of the video due to speed of computer
