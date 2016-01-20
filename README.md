@@ -25,3 +25,7 @@ file for the entire lecture and will never need to rewatch the lecture trying to
 Using the Selenium package, python opens each link one by one from the urls.txt file into a new browser. Selenium then clicks the CC button
 and the speed button 3x to push the video to the fastest speed. The closed captions that apear on screen are recorded and after the video
 finishes (current video time = duration of video), the text is appended to the closed_captions.txt file
+
+### Known bugs
+  - Does not record last line of closed captions in the situaiton that there are multiple caption "boxes" still showing
+  - Sometimes misses the end of the video due to speed of computer
