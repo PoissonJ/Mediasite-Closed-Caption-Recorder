@@ -20,7 +20,7 @@ for url in list_of_urls:
     page_title = browser.title
     print page_title
 
-    # Give time for javascript to being playing video
+    # Give time for javascript to begin playing video
     time.sleep(3.00)
 
     video_playing = True
